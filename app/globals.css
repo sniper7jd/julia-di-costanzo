@@ -1,13 +1,46 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-black: #000000;
+  --color-body: #444444;
+  --color-muted: #777777;
+  --color-rail: #e6e6e6;
+  --color-border: #e0e0e0;
+  --color-inverse: #ffffff;
+  --color-accent: pink;
+  --shadow-project: rgba(0, 0, 0, 0.2);
+  --shadow-project-strong: rgba(0, 0, 0, 0.3);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  --hero-size: 30vh;
+  --section-title: 20vh;
+  --section-title-lh: 23vh;
+  --tagline: 2.5vh;
+  --about-body: 3vh;
+  --about-lh: 4.5vh;
+  --job-title: 3.2vh;
+  --company: 2.3vh;
+  --meta: 2vh;
+  --bullet: 2.2vh;
+  --bullet-lh: 3.4vh;
+  --skill-cat: 3vh;
+  --skill-item: 2.2vh;
+  --chip: 1.7vh;
+  --project-title: 4vh;
+  --project-blurb: 2.8vh;
+  --project-link: 2.5vh;
+  --contact-cta: 5vh;
+  --banner: 3vh;
+  --banner-lh: 4.5vh;
+  --footer: 2.8vh;
+  --icon-size: 60px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -17,17 +50,11 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -35,8 +62,104 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Breakpoint ladder matching swaaz.dev type scale */
+@media (max-width: 1920px) {
+  :root {
+    --hero-size: 26vh;
+    --section-title: 18vh;
+    --section-title-lh: 21vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --hero-size: 22vh;
+    --section-title: 16vh;
+    --section-title-lh: 19vh;
+    --about-body: 2.8vh;
+    --about-lh: 4.2vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --hero-size: 18vh;
+    --section-title: 14vh;
+    --section-title-lh: 16vh;
+    --project-title: 3.4vh;
+    --contact-cta: 4.2vh;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --hero-size: 16vh;
+    --section-title: 13vh;
+    --section-title-lh: 15vh;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --hero-size: 14vh;
+    --section-title: 12vh;
+    --section-title-lh: 14vh;
+    --tagline: 2.2vh;
+    --about-body: 2.4vh;
+    --about-lh: 3.6vh;
+    --icon-size: 40px;
+    --job-title: 2.8vh;
+    --company: 2vh;
+    --bullet: 2vh;
+    --bullet-lh: 3vh;
+    --skill-cat: 2.6vh;
+    --skill-item: 2vh;
+    --project-title: 3vh;
+    --project-blurb: 2.4vh;
+    --contact-cta: 3.6vh;
+    --banner: 2.4vh;
+    --banner-lh: 3.6vh;
+    --footer: 2.4vh;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --hero-size: 13vh;
+    --section-title: 11vh;
+    --section-title-lh: 13vh;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --hero-size: 12vh;
+    --section-title: 10vh;
+    --section-title-lh: 12vh;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    --hero-size: 11.5vh;
+    --section-title: 9vh;
+    --section-title-lh: 11vh;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --hero-size: 11vh;
+    --section-title: 8vh;
+    --section-title-lh: 10vh;
   }
 }

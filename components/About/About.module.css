@@ -1,0 +1,42 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vh 0;
+}
+
+.inner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.body {
+  margin-top: 2vh;
+}
+
+.body p {
+  font-size: var(--about-body);
+  line-height: var(--about-lh);
+  color: var(--color-body);
+  text-align: justify;
+  margin-bottom: 3vh;
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .inner {
+    width: 90%;
+  }
+}

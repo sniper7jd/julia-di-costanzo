@@ -1,0 +1,134 @@
+.section {
+  min-height: 100vh;
+  padding: 8vh 0 10vh;
+}
+
+.timeline {
+  position: relative;
+  width: 55%;
+  margin: 4vh auto 0;
+  padding-left: 3.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 2px;
+  background: var(--color-rail);
+}
+
+.entry {
+  position: relative;
+  margin-bottom: 7vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: calc(-3.5rem + 0.15rem);
+  top: 0.55rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-text);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px var(--color-text);
+  transition: transform 0.3s ease-in-out;
+}
+
+.entry:hover .dot {
+  transform: scale(1.15);
+}
+
+.jobTitle {
+  font-size: var(--job-title);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.6vh;
+}
+
+.metaRow {
+  margin-bottom: 1.5vh;
+}
+
+.company {
+  font-size: var(--company);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.meta {
+  font-size: var(--meta);
+  color: var(--color-muted);
+}
+
+.bullets {
+  margin: 1.5vh 0 2vh;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: var(--bullet);
+  line-height: var(--bullet-lh);
+  color: var(--color-body);
+  margin-bottom: 1vh;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.1vh;
+  width: 0.7rem;
+  height: 2px;
+  background: var(--color-text);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8vh 0.6vw;
+}
+
+.chip {
+  display: inline-block;
+  font-size: var(--chip);
+  color: var(--color-body);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  cursor: default;
+}
+
+.chip:hover {
+  color: var(--color-inverse);
+  background: var(--color-text);
+  border-color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+  .timeline {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    width: 90%;
+    padding-left: 2.5rem;
+  }
+
+  .dot {
+    left: calc(-2.5rem + 0.15rem);
+  }
+}

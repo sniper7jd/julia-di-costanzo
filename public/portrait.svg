@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="800" viewBox="0 0 640 800" role="img" aria-label="Portrait placeholder">
+  <rect width="640" height="800" fill="#e6e6e6"/>
+  <circle cx="320" cy="280" r="110" fill="#c8c8c8"/>
+  <ellipse cx="320" cy="560" rx="180" ry="160" fill="#c8c8c8"/>
+  <text x="320" y="740" text-anchor="middle" font-family="system-ui,sans-serif" font-size="28" fill="#777">Your photo</text>
+</svg>

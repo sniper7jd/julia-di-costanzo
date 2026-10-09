@@ -1,0 +1,58 @@
+.section {
+  min-height: 100vh;
+  padding: 8vh 0 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel {
+  width: 80%;
+  margin: 4vh auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.slide {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: clamp(120px, 16vw, 200px);
+  height: auto;
+  filter: grayscale(90%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.slide:hover .logo {
+  filter: grayscale(0%);
+}
+
+.controls,
+.controls :global(.slider-control-prev),
+.controls :global(.slider-control-next),
+.controls :global(.slider-control-bottomcenter),
+.controls :global(.slider-control-centerright),
+.controls :global(.slider-control-centerleft) {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+  }
+
+  .track {
+    gap: 6vw;
+  }
+}

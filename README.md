@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Julia Di Costanzo — Personal Portfolio
 
-## Getting Started
+A Next.js (App Router) personal site styled to match [swaaz.dev](https://swaaz.dev/): light canvas, giant `vh` typography, experience timeline, grayscale project imagery, and a clubs carousel.
 
-First, run the development server:
+## Run locally
 
 ```bash
+cd /home/ubuntu/julia-di-costanzo   # or your clone path
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production build:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Edit content
 
-To learn more about Next.js, take a look at the following resources:
+Almost all copy, links, and image paths live in one file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**[`src/content/site.ts`](src/content/site.ts)**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Replace `[Your …]` / `TODO` placeholders with your bio, roles, skills, projects, and contact email.
+2. Swap images under `public/`:
+   - `public/portrait.svg` → your portrait (PNG/JPG also fine; update the path in `site.ts`)
+   - `public/projects/project-*.svg` → project screenshots
+   - `public/clubs/club-*.svg` → club/org logos
+   - `public/icons/` → optional social icon swaps
+3. Save and refresh — components only read from `site.ts`.
 
-## Deploy on Vercel
+## Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js App Router + TypeScript
+- CSS Modules + `app/globals.css` tokens (no styled-components / Tailwind)
+- CSS-only motion (chip/dot `0.3s`, image grayscale `0.5s`)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+Push to GitHub and import the repo in [Vercel](https://vercel.com). Default Next.js settings work.
+
+> This project is intentionally separate from `ipl_rag_system`.
