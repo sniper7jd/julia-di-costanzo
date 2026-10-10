@@ -100,13 +100,12 @@ export const site = {
     tagline: "Checkout some cool stuffs I've built",
     items: [
       {
-        title: "[Project One]", // TODO
-        description:
-          "[Short blurb — what it does and why it matters. Replace public/projects/project-1.svg.]",
-        href: "https://github.com/[your-username]/[repo]", // TODO
-        linkLabel: "GitHub",
-        image: withBasePath("/projects/project-1.svg"),
-        imageAlt: "[Project One screenshot placeholder]",
+        title: "Jojo's creation",
+        description: "Photos from the summer",
+        href: "https://juliadc.dev",
+        linkLabel: "juliadc.dev",
+        image: withBasePath("/projects/project1.jpg"),
+        imageAlt: "Jojo's creation",
       },
     ],
   },
