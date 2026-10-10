@@ -1,7 +1,7 @@
 /** Must match `basePath` / `assetPrefix` in next.config.ts */
-export const BASE_PATH = "/julia-di-costanzo";
+export const BASE_PATH = "";
 
-/** Prefix a root-absolute public asset path for GitHub Pages. */
+/** Prefix a root-absolute public asset path (no-op when BASE_PATH is empty). */
 export function withBasePath(path: string): string {
   if (
     !path.startsWith("/") ||

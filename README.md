@@ -2,7 +2,7 @@
 
 A Next.js (App Router) personal site styled to match [swaaz.dev](https://swaaz.dev/): light canvas, giant `vh` typography, experience timeline, grayscale project imagery, and a clubs carousel.
 
-**Live site:** [https://sniper7jd.github.io/julia-di-costanzo/](https://sniper7jd.github.io/julia-di-costanzo/)
+**Live site:** [https://juliadi.dev](https://juliadi.dev)
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000/julia-di-costanzo/](http://localhost:3000/julia-di-costanzo/) (dev respects `basePath`).
+Open [http://localhost:3000/](http://localhost:3000/).
 
 ### Preview the static export
 
@@ -20,7 +20,7 @@ npm run build
 npx --yes serve out
 ```
 
-Then open the URL `serve` prints and navigate to `/julia-di-costanzo/` (or open `out/index.html` via a static server that preserves the folder layout).
+Then open the URL `serve` prints (site root).
 
 ## Edit content
 
@@ -43,16 +43,27 @@ Almost all copy, links, and image paths live in one file:
 - CSS-only motion (chip/dot `0.3s`, image grayscale `0.5s`)
 - Static export (`output: 'export'`) for GitHub Pages
 
-## Deploy (GitHub Pages)
+## Deploy (GitHub Pages + custom domain)
 
-This repo deploys via GitHub Actions (`.github/workflows/deploy-pages.yml`) on every push to `main`. The workflow builds the Next.js static export into `out/` and uploads it with the official Pages actions.
+This repo deploys via GitHub Actions (`.github/workflows/deploy-pages.yml`) on every push to `main`. The workflow builds the Next.js static export into `out/` and uploads it with the official Pages actions. `public/CNAME` keeps the custom domain (`juliadi.dev`) in sync with GitHub Pages.
 
 ### One-time repo setting
 
 In the GitHub repo: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 
-After the first successful workflow run, the site is available at:
+### DNS
 
-`https://sniper7jd.github.io/julia-di-costanzo/`
+Point the apex domain at GitHub Pages with A records:
+
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+And/or set `www` as a CNAME to `sniper7jd.github.io`.
+
+After DNS verifies in **Settings → Pages**, enable **Enforce HTTPS**.
+
+Live URL: `https://juliadi.dev`
 
 > This project is intentionally separate from `ipl_rag_system` and `subway-mate`.
