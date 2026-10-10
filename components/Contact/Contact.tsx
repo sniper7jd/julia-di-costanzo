@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { site } from "@/src/content/site";
+import { withBasePath } from "@/src/lib/basePath";
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
 import styles from "./Contact.module.css";
 
@@ -24,7 +25,7 @@ export function Contact() {
         <p className={styles.footerLine}>
           {footer}{" "}
           <Image
-            src="/icons/heart.svg"
+            src={withBasePath("/icons/heart.svg")}
             alt=""
             width={28}
             height={28}

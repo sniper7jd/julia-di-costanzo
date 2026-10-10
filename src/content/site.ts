@@ -3,7 +3,10 @@
  * Edit this file (and swap images in /public) to personalize the site.
  *
  * Placeholders are marked with [Your …] or TODO comments.
+ * Public asset paths go through withBasePath() for GitHub Pages.
  */
+
+import { withBasePath } from "@/src/lib/basePath";
 
 export const site = {
   name: "Julia Di Costanzo",
@@ -17,29 +20,29 @@ export const site = {
   hero: {
     lines: ["Hey,", "I'm", "Julia"] as const,
     portrait: {
-      src: "/portrait.svg",
+      src: withBasePath("/portrait.svg"),
       alt: "[Your portrait photo — replace public/portrait.svg]",
     },
     socials: [
       {
         label: "GitHub",
         href: "https://github.com/[your-username]", // TODO
-        icon: "/icons/github.svg",
+        icon: withBasePath("/icons/github.svg"),
       },
       {
         label: "LinkedIn",
         href: "https://linkedin.com/in/[your-username]", // TODO
-        icon: "/icons/linkedin.svg",
+        icon: withBasePath("/icons/linkedin.svg"),
       },
       {
         label: "Email",
         href: "mailto:[your.email@example.com]", // TODO
-        icon: "/icons/email.svg",
+        icon: withBasePath("/icons/email.svg"),
       },
       {
         label: "Twitter",
         href: "https://twitter.com/[your-username]", // TODO
-        icon: "/icons/twitter.svg",
+        icon: withBasePath("/icons/twitter.svg"),
       },
     ],
   },
@@ -124,22 +127,22 @@ export const site = {
     items: [
       {
         name: "[Club / Org 1]", // TODO
-        logo: "/clubs/club-1.svg",
+        logo: withBasePath("/clubs/club-1.svg"),
         href: "#",
       },
       {
         name: "[Club / Org 2]", // TODO
-        logo: "/clubs/club-2.svg",
+        logo: withBasePath("/clubs/club-2.svg"),
         href: "#",
       },
       {
         name: "[Club / Org 3]", // TODO
-        logo: "/clubs/club-3.svg",
+        logo: withBasePath("/clubs/club-3.svg"),
         href: "#",
       },
       {
         name: "[Club / Org 4]", // TODO
-        logo: "/clubs/club-4.svg",
+        logo: withBasePath("/clubs/club-4.svg"),
         href: "#",
       },
     ],
@@ -155,7 +158,7 @@ export const site = {
           "[Short blurb — what it does and why it matters. Replace public/projects/project-1.svg.]",
         href: "https://github.com/[your-username]/[repo]", // TODO
         linkLabel: "GitHub",
-        image: "/projects/project-1.svg",
+        image: withBasePath("/projects/project-1.svg"),
         imageAlt: "[Project One screenshot placeholder]",
       },
       {
@@ -164,7 +167,7 @@ export const site = {
           "[Short blurb for your second project. Swap the placeholder art anytime.]",
         href: "https://github.com/[your-username]/[repo]", // TODO
         linkLabel: "GitHub",
-        image: "/projects/project-2.svg",
+        image: withBasePath("/projects/project-2.svg"),
         imageAlt: "[Project Two screenshot placeholder]",
       },
       {
@@ -173,7 +176,7 @@ export const site = {
           "[Short blurb for your third project — demo link or write-up welcome.]",
         href: "https://github.com/[your-username]/[repo]", // TODO
         linkLabel: "GitHub",
-        image: "/projects/project-3.svg",
+        image: withBasePath("/projects/project-3.svg"),
         imageAlt: "[Project Three screenshot placeholder]",
       },
     ],
