@@ -57,13 +57,13 @@ export const site = {
       {
         title: "Handling Jagrit",
         company: "Personal",
-        dates: "Jan 2024 — Present",
+        dates: "September 1 — Present",
         location: "",
         bullets: [
           "Deal with him every day.",
           "Saying that's not very nice.",
         ],
-        tech: ["TypeScript", "React", "Node.js"],
+        tech: ["morning", "afternoon", "night"],
       },
     ],
   },
@@ -113,11 +113,9 @@ export const site = {
 
   contact: {
     title: "Let's talk!",
-    prompt:
-      "Wanna talk about work? opportunity? collaboration? or life?",
-    ctaLabel: "Say hello!",
-    email: "[your.email@example.com]", // TODO
-    footer: "Made on earth with",
+    linkLabel: "everyday till the end of time",
+    linkHref: "https://juliadc.dev",
+    footer: "made for jd by jd",
   },
 } as const;
 

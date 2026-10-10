@@ -8,17 +8,11 @@
   text-align: center;
 }
 
-.prompt {
-  font-size: var(--tagline);
-  color: var(--color-body);
-  margin: -1vh 0 4vh;
-  max-width: 80%;
-}
-
 .cta {
   font-size: var(--contact-cta);
   font-weight: 700;
   color: var(--color-text);
+  margin: -1vh 0 0;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -37,15 +31,6 @@
 .footerLine {
   font-size: var(--footer);
   color: var(--color-body);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.heart {
-  width: 1.2em;
-  height: 1.2em;
-  display: inline-block;
 }
 
 .socials {
