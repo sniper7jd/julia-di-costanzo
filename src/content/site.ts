@@ -15,8 +15,8 @@ export const site = {
   hero: {
     lines: ["Hey,", "I'm", "Jojo"] as const,
     portrait: {
-      src: withBasePath("/portrait.svg"),
-      alt: "[Your portrait photo — replace public/portrait.svg]",
+      src: withBasePath("/jojo.png"),
+      alt: "Jojo",
     },
     socials: [
       {
