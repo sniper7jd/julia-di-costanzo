@@ -46,8 +46,7 @@ export const site = {
     title: "About",
     tagline: "Want to know me?",
     paragraphs: [
-      "I'm Jojo — powered by cookies, candy, and whatever else counts as sweet. Peanuts are a hard no. Life's too short for that energy.",
-      "This site is a little corner of the internet for vibes, projects, and the ongoing saga of dealing with Jagrit. Stick around if that sounds like your kind of chaos.",
+      "I'm Jojo, powered by cookies, candy and whatever else counts as sweet. Peanuts are a hard no. Jagrit I can tolerate.",
     ],
   },
 
@@ -108,24 +107,6 @@ export const site = {
         linkLabel: "GitHub",
         image: withBasePath("/projects/project-1.svg"),
         imageAlt: "[Project One screenshot placeholder]",
-      },
-      {
-        title: "[Project Two]", // TODO
-        description:
-          "[Short blurb for your second project. Swap the placeholder art anytime.]",
-        href: "https://github.com/[your-username]/[repo]", // TODO
-        linkLabel: "GitHub",
-        image: withBasePath("/projects/project-2.svg"),
-        imageAlt: "[Project Two screenshot placeholder]",
-      },
-      {
-        title: "[Project Three]", // TODO
-        description:
-          "[Short blurb for your third project — demo link or write-up welcome.]",
-        href: "https://github.com/[your-username]/[repo]", // TODO
-        linkLabel: "GitHub",
-        image: withBasePath("/projects/project-3.svg"),
-        imageAlt: "[Project Three screenshot placeholder]",
       },
     ],
   },
