@@ -10,15 +10,10 @@ import { withBasePath } from "@/src/lib/basePath";
 
 export const site = {
   name: "Julia Di Costanzo",
-  firstName: "Julia",
-
-  banner: {
-    /* TODO: replace with your own witty line */
-    text: "This website is under construction; Stalk at your own risk ;)",
-  },
+  firstName: "Jojo",
 
   hero: {
-    lines: ["Hey,", "I'm", "Julia"] as const,
+    lines: ["Hey,", "I'm", "Jojo"] as const,
     portrait: {
       src: withBasePath("/portrait.svg"),
       alt: "[Your portrait photo — replace public/portrait.svg]",
@@ -51,9 +46,8 @@ export const site = {
     title: "About",
     tagline: "Want to know me?",
     paragraphs: [
-      /* TODO: replace with your bio */
-      "Hi, I'm [Your Full Name] — a [Your Role] who [one-line pitch]. I care about shipping thoughtful software, learning in public, and building things people actually enjoy using.",
-      "Before [current chapter], I [prior chapter]. Outside of work you'll find me [hobbies / interests]. This site is a living placeholder — swap this copy when you're ready.",
+      "I'm Jojo — powered by cookies, candy, and whatever else counts as sweet. Peanuts are a hard no. Life's too short for that energy.",
+      "This site is a little corner of the internet for vibes, projects, and the ongoing saga of dealing with Jagrit. Stick around if that sounds like your kind of chaos.",
     ],
   },
 
@@ -62,61 +56,15 @@ export const site = {
     tagline: "My journey so far",
     roles: [
       {
-        title: "[Job Title]", // TODO
-        company: "[Company]",
+        title: "Handling Jagrit",
+        company: "Personal",
         dates: "Jan 2024 — Present",
-        location: "[City, Country]",
+        location: "",
         bullets: [
-          "[Impact bullet — what you owned and the outcome.]",
-          "[Second bullet — collaboration, scale, or shipping detail.]",
-          "[Third bullet — mentorship, tooling, or reliability win.]",
+          "Deal with him every day.",
+          "Saying that's not very nice.",
         ],
-        tech: ["TypeScript", "React", "Node.js", "PostgreSQL"],
-      },
-      {
-        title: "[Previous Role]", // TODO
-        company: "[Company]",
-        dates: "Jun 2022 — Dec 2023",
-        location: "[City, Country]",
-        bullets: [
-          "[Describe a product or feature you shipped end-to-end.]",
-          "[Call out metrics, users, or performance if you have them.]",
-        ],
-        tech: ["Python", "FastAPI", "AWS"],
-      },
-      {
-        title: "[Internship / Early Role]", // TODO
-        company: "[Organization]",
-        dates: "May 2021 — May 2022",
-        location: "[City, Country]",
-        bullets: [
-          "[What you built and who it helped.]",
-          "[Stack or process you learned deeply.]",
-        ],
-        tech: ["JavaScript", "Figma"],
-      },
-    ],
-  },
-
-  skills: {
-    title: "Skills",
-    tagline: "Technologies I work with",
-    categories: [
-      {
-        name: "Languages",
-        items: ["[Language]", "TypeScript", "Python", "SQL"], // TODO
-      },
-      {
-        name: "Frontend & Mobile",
-        items: ["React", "Next.js", "[Tool]", "CSS"], // TODO
-      },
-      {
-        name: "Backend & Systems",
-        items: ["Node.js", "[Framework]", "APIs", "Databases"], // TODO
-      },
-      {
-        name: "Tools & Practices",
-        items: ["Git", "Docker", "CI/CD", "[Other]"], // TODO
+        tech: ["TypeScript", "React", "Node.js"],
       },
     ],
   },

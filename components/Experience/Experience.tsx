@@ -23,7 +23,9 @@ export function Experience() {
               <span className={styles.company}>{role.company}</span>
               <span className={styles.meta}>
                 {" "}
-                {role.dates} · {role.location}
+                {role.location
+                  ? `${role.dates} · ${role.location}`
+                  : role.dates}
               </span>
             </p>
             <ul className={styles.bullets}>

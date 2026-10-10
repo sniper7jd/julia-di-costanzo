@@ -2,7 +2,7 @@
 
 A Next.js (App Router) personal site styled to match [swaaz.dev](https://swaaz.dev/): light canvas, giant `vh` typography, experience timeline, grayscale project imagery, and a clubs carousel.
 
-**Live site:** [https://juliadi.dev](https://juliadi.dev)
+**Live site:** [https://juliadc.dev](https://juliadc.dev)
 
 ## Run locally
 
@@ -28,7 +28,7 @@ Almost all copy, links, and image paths live in one file:
 
 **[`src/content/site.ts`](src/content/site.ts)**
 
-1. Replace `[Your …]` / `TODO` placeholders with your bio, roles, skills, projects, and contact email.
+1. Replace `[Your …]` / `TODO` placeholders with your bio, roles, projects, and contact email.
 2. Swap images under `public/`:
    - `public/portrait.svg` → your portrait (PNG/JPG also fine; update the path in `site.ts`)
    - `public/projects/project-*.svg` → project screenshots
@@ -45,7 +45,7 @@ Almost all copy, links, and image paths live in one file:
 
 ## Deploy (GitHub Pages + custom domain)
 
-This repo deploys via GitHub Actions (`.github/workflows/deploy-pages.yml`) on every push to `main`. The workflow builds the Next.js static export into `out/` and uploads it with the official Pages actions. `public/CNAME` keeps the custom domain (`juliadi.dev`) in sync with GitHub Pages.
+This repo deploys via GitHub Actions (`.github/workflows/deploy-pages.yml`) on every push to `main`. The workflow builds the Next.js static export into `out/` and uploads it with the official Pages actions. `public/CNAME` keeps the custom domain (`juliadc.dev`) in sync with GitHub Pages.
 
 ### One-time repo setting
 
@@ -64,6 +64,6 @@ And/or set `www` as a CNAME to `sniper7jd.github.io`.
 
 After DNS verifies in **Settings → Pages**, enable **Enforce HTTPS**.
 
-Live URL: `https://juliadi.dev`
+Live URL: `https://juliadc.dev`
 
 > This project is intentionally separate from `ipl_rag_system` and `subway-mate`.
