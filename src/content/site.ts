@@ -21,22 +21,22 @@ export const site = {
     socials: [
       {
         label: "GitHub",
-        href: "https://github.com/[your-username]", // TODO
+        href: "https://unsplash.com/photos/a-close-up-of-a-cat-on-a-bed-gz0rGe7mhL8",
         icon: withBasePath("/icons/github.svg"),
       },
       {
         label: "LinkedIn",
-        href: "https://linkedin.com/in/[your-username]", // TODO
+        href: "https://unsplash.com/photos/black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk",
         icon: withBasePath("/icons/linkedin.svg"),
       },
       {
         label: "Email",
-        href: "mailto:[your.email@example.com]", // TODO
+        href: "https://unsplash.com/photos/selective-focus-photography-of-orange-and-white-cat-on-brown-table-75715CVEJhI",
         icon: withBasePath("/icons/email.svg"),
       },
       {
         label: "Twitter",
-        href: "https://twitter.com/[your-username]", // TODO
+        href: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
         icon: withBasePath("/icons/twitter.svg"),
       },
     ],
